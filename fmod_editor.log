@@ -2,13 +2,12 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=20109 (115889), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=192000, nAvgBytesPerSec=1536000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 16384 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[LOG] SystemI::init                            : Output requires a sample rate of 192000Hz, resampling will occur.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B7E8D2EC18 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002B7C39212B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,3 +16,176 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = ../../Users/TakeoCSGOD/Google Drive/Universidad/Proyecto Final de Curso/Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002B839F7B8B8 : node = 000002B7C346BB50
+[LOG] SystemI::createSound                     : add node to async list : head = 000002B7E8D3A328.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002B839F7B8B8
+[LOG] SystemI::createSoundInternal             :     Create name='../../Users/TakeoCSGOD/Google Drive/Universidad/Proyecto Final de Curso/Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002B7C346BC60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Poison 1', format=5, channels=2, frequency=48000, lengthbytes=569280, lengthpcm=1533312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707520.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002B839F7B8B8
+[LOG] SoundI::release                          : Poison 1 (000002B839F74CB8)
+[LOG] SoundI::release                          :     Poison 1 (000002B7F0A08C88)
+[LOG] SoundI::release                          :     Poison 1 (000002B839F75378)
+[LOG] SoundI::release                          : Lava_flow_2 (000002B839F79F68)
+[LOG] SoundI::release                          :     Lava_flow_2 (000002B7F0A09308)
+[LOG] SoundI::release                          :     Lava_flow_2 (000002B839F78CD8)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F798A8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0AEA8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F76B18)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F6FA08)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A08608)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F751C8)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F74B08)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0BBA8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F78E88)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F74958)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0A008)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F75018)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F74448)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0A688)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F78978)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F73F38)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0BD48)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F767B8)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F6F858)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A09648)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F75888)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F7B708)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A08AE8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F78B28)
+[LOG] SoundI::release                          : Bonfire_1 (000002B839F711A8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B7F0A0A4E8)
+[LOG] SoundI::release                          :     Bonfire_1 (000002B839F6FF18)
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (000002B839F75BE8)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (000002B7F0A0B388)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (000002B839F75A38)
+[LOG] SoundI::release                          : Poison 1 (000002B839F7B8B8)
+[LOG] SoundI::release                          :     Poison 1 (000002B7F0421818)
+[LOG] SoundI::release                          :     Poison 1 (000002B839F7BA68)
+[LOG] SoundI::release                          :  (000002B7E819A5A8)
+[LOG] SoundI::release                          :     Fire Monster Vocals_6 (000002B7C081EC68)
+[LOG] SoundI::release                          :  (000002B7F0C88C18)
+[LOG] SoundI::release                          :     BEAST 01 Threaten Short 06 (000002B7C081CF28)
+[LOG] SoundI::release                          :  (000002B7E819A438)
+[LOG] SoundI::release                          :     Talking Mutant 1_Mono (000002B7C081DF68)
+[LOG] SoundI::release                          :  (000002B7F0C88AA8)
+[LOG] SoundI::release                          :     BEAST 01 Attack 08 (000002B7C081FCA8)
+[LOG] SoundI::release                          :  (000002B7E8199E78)
+[LOG] SoundI::release                          :     76962__michel88__deaths (000002B7C0820E88)
+[LOG] SoundI::release                          :  (000002B7E8199A28)
+[LOG] SoundI::release                          :     MR - Swamp Fish Creature Damage VO 08 (000002B7C081C228)
+[LOG] SoundI::release                          :  (000002B7E8199188)
+[LOG] SoundI::release                          :     Small_monsters_2 (000002B7C0820328)
+[LOG] SoundI::release                          :  (000002B7F0C887C8)
+[LOG] SoundI::release                          :     76966__michel88__paind (000002B7C0821848)
+[LOG] SoundI::release                          :  (000002B7E8199468)
+[LOG] SoundI::release                          :     MR - Orc Attack VO 04 (000002B7C081D0C8)
+[LOG] SoundI::release                          :  (000002B7E8192E58)
+[LOG] SoundI::release                          :     Dash_1 (000002B7C081D5A8)
+[LOG] SoundI::release                          :  (000002B7E81950D8)
+[LOG] SoundI::release                          :     Footstep on concrete 1 (000002B7C08209A8)
+[LOG] SoundI::release                          :  (000002B7E8198328)
+[LOG] SoundI::release                          :     Footstep on concrete 2 (000002B7C081C3C8)
+[LOG] SoundI::release                          :  (000002B7E8F06AC8)
+[LOG] SoundI::release                          :     Footstep on concrete 3 (000002B7C0821508)
+[LOG] SoundI::release                          :  (000002B7E81960A8)
+[LOG] SoundI::release                          :     Footstep on concrete 4 (000002B7C081D8E8)
+[LOG] SoundI::release                          :  (000002B7E8194C88)
+[LOG] SoundI::release                          :     mixkit-fighting-man-voice-2172 (000002B7C0821368)
+[LOG] SoundI::release                          :  (000002B7E8195528)
+[LOG] SoundI::release                          :     Impact Takeo 1 (000002B7C0821028)
+[LOG] SoundI::release                          :  (000002B7E81949A8)
+[LOG] SoundI::release                          :     Impact Takeo 2 (000002B7C08204C8)
+[LOG] SoundI::release                          :  (000002B7E8192A08)
+[LOG] SoundI::release                          :     Impact Takeo 3 (000002B7C081F968)
+[LOG] SoundI::release                          :  (000002B7E8F07928)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (1) (000002B7C081EFA8)
+[LOG] SoundI::release                          :  (000002B7E8199748)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (2) (000002B7C081F488)
+[LOG] SoundI::release                          :  (000002B7E8198608)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (3) (000002B7C0822208)
+[LOG] SoundI::release                          :  (000002B7E8F01A48)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (4) (000002B7C0820CE8)
+[LOG] SoundI::release                          :  (000002B7E8194108)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (6) (000002B7C081D748)
+[LOG] SoundI::release                          :  (000002B7E8198498)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (000002B7C081D408)
+[LOG] SoundI::release                          :  (000002B7E8F05DD8)
+[LOG] SoundI::release                          :     Female_pain_1 (000002B7C081EE08)
+[LOG] SoundI::release                          :  (000002B7E8F01BB8)
+[LOG] SoundI::release                          :     Female_pain_2 (000002B7C081DA88)
+[LOG] SoundI::release                          :  (000002B7E8F00908)
+[LOG] SoundI::release                          :     Female_pain_3 (000002B7C081E2A8)
+[LOG] SoundI::release                          :  (000002B7E8194278)
+[LOG] SoundI::release                          :     Female_pain_4 (000002B7C0820668)
+[LOG] SoundI::release                          :  (000002B7E8F00348)
+[LOG] SoundI::release                          :     223615__ctcollab__fireball-1_mp3cut.net (000002B7C0820188)
+[LOG] SoundI::release                          :  (000002B7E8196668)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_1 (000002B7C081E928)
+[LOG] SoundI::release                          :  (000002B7E81946C8)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_2 (000002B7C08219E8)
+[LOG] SoundI::release                          :  (000002B7E81995D8)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_3 (000002B7C081D268)
+[LOG] SoundI::release                          :  (000002B7E8195248)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_4 (000002B7C08223A8)
+[LOG] SoundI::release                          :  (000002B7E8193418)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_5 (000002B7C081EAC8)
+[LOG] SoundI::release                          :  (000002B7E8193E28)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_6 (1) (000002B7C081DC28)
+[LOG] SoundI::release                          :  (000002B7E8F03E38)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_6 (000002B7C0820B48)
+[LOG] SoundI::release                          :  (000002B7E81939D8)
+[LOG] SoundI::release                          :     PowerUp_Mario_2 (000002B7C08216A8)
+[LOG] SoundI::release                          :  (000002B7E81953B8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (5) (000002B7C0822548)
+[LOG] SoundI::release                          :  (000002B7E8193F98)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (6) (000002B7C081C568)
+[LOG] SoundI::release                          :  (000002B7E8194F68)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (000002B7C081FE48)
+[LOG] SoundI::release                          :  (000002B7E8F00BE8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (3) (000002B7C08211C8)
+[LOG] SoundI::release                          :  (000002B7E8F03FA8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (2) (000002B7C081E448)
+[LOG] SoundI::release                          :  (000002B7E8F00EC8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (1) (000002B7C081E108)
+[LOG] SoundI::release                          :  (000002B7E8F071F8)
+[LOG] SoundI::release                          :     wood_breaking_cracking_snapping_breaking_peeling_bones_break_snap_crack_13 (000002B7C081FB08)
+[LOG] SoundI::release                          :  (000002B7E8F06508)
+[LOG] SoundI::release                          :     Bluezone_BC0254_wood_handling_003 (000002B7C081F2E8)
+[LOG] SoundI::release                          :  (000002B7E8F07648)
+[LOG] SoundI::release                          :     Bluezone_BC0254_wood_falling_log_002_006 (000002B7C081F7C8)
+[LOG] SoundI::release                          :  (000002B7E8F07EE8)
+[LOG] SoundI::release                          :     Dungeon Door Open, Close, Locked (000002B7C081C088)
+[LOG] SoundI::release                          :  (000002B7E8F07D78)
+[LOG] SoundI::release                          :     Electronic_Knob_Multi_Turns_Slow-016 (000002B7C081FFE8)
+[LOG] SoundI::release                          :  (000002B7E8F05F48)
+[LOG] SoundI::release                          :     Openin_ Door_1 (000002B7C081F148)
+[LOG] SoundI::release                          :  (000002B7E8F06DA8)
+[LOG] SoundI::release                          :     Bluezone_BC0268_switch_button_click_ignition_002_03 (000002B7C08226E8)
+[LOG] SoundI::release                          :  (000002B7E8F06F18)
+[LOG] SoundI::release                          :     impact_wood_debris_fall_hit_02 (000002B7C0822F08)
+[LOG] SoundI::release                          :  (000002B7E8F077B8)
+[LOG] SoundI::release                          :     Sub Low Movement 01 (000002B7C0823C08)
+[LOG] SoundI::release                          :  (000002B7E8F067E8)
+[LOG] SoundI::release                          :     UI Button Click Sound Effect Button (000002B7F0A0B048)
+[LOG] SoundI::release                          :  (000002B7E8F06398)
+[LOG] SoundI::release                          :     Button_2 (000002B7C0822D68)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
