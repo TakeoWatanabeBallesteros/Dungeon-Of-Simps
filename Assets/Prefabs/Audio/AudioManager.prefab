@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5690586920757927941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6965138792376405745}
+  - component: {fileID: 3218236674026350124}
+  - component: {fileID: 1684252474153446063}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6965138792376405745
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690586920757927941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -46.251392, y: -9.098306, z: -59.48405}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3218236674026350124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690586920757927941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f38d99e0fa9eac438b875f26549e743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFootstepsConcrete: {fileID: 0}
+  MeleAttackEvent: event:/Player Sounds/Mele Attack
+  DoorEvent: event:/Props Sounds/Door
+  WoodHitEvent: event:/Props Sounds/Wood Hit
+  WoodDestroyEvent: event:/Props Sounds/Wood Destroy
+  GirlFightEvemt: event:/Player Sounds/Girl Fight
+  GirlHitEvent: event:/Player Sounds/Player Hit
+  PowerupEvent: event:/Player Sounds/PowerUP
+  GirlDashEvent: event:/Player Sounds/GirlDash
+--- !u!114 &1684252474153446063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690586920757927941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6645f860442966048a3ebf8412b8f205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MiniMobEvent: event:/Mobs/Mini Mob/Mini Mob Sounds
+  WitchEvent: event:/Mobs/Witch/Witch Sounds
+  GolemEvent: event:/Mobs/Golem/Golem Audio
+  SunEvent: event:/Mobs/Sun/Sun sounds
