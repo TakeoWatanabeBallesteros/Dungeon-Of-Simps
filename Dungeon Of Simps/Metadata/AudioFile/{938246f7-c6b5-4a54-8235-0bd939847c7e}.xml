@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{938246f7-c6b5-4a54-8235-0bd939847c7e}">
+		<property name="assetPath">
+			<value>Impact/Mierda/Hit_Gore_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6d23ed13-a8a7-462c-800d-c38c84f94ea5}</destination>
+		</relationship>
+	</object>
+</objects>

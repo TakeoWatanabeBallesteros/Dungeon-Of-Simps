@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{1929a424-4216-4448-9b18-36bd1f88508e}">
+		<property name="assetPath">
+			<value>Buttons - Interactions/PowerUps/PowerUp_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.4987083333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6d23ed13-a8a7-462c-800d-c38c84f94ea5}</destination>
+		</relationship>
+	</object>
+</objects>

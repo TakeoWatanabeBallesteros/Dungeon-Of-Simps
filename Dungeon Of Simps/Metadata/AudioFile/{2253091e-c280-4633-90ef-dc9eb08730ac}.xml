@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{2253091e-c280-4633-90ef-dc9eb08730ac}">
+		<property name="assetPath">
+			<value>Ost´s/Hambience/Ethereal Breaths - Abstract w_Reverb.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>222.11650793650793</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6d23ed13-a8a7-462c-800d-c38c84f94ea5}</destination>
+		</relationship>
+	</object>
+</objects>

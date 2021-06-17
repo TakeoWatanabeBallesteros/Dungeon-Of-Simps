@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{30213de2-6abe-42fa-bc9b-22675d774d39}">
+		<property name="assetPath">
+			<value>ouch/234039__ameangelofsin__pain-ouch (mp3cut.net) (4).mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.80979591836734699</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6d23ed13-a8a7-462c-800d-c38c84f94ea5}</destination>
+		</relationship>
+	</object>
+</objects>

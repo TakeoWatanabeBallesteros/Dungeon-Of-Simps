@@ -40,6 +40,25 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-9127225821822583606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SoundTrack.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/SoundTrack.bank
+  Name: SoundTrack
+  StudioPath: bank:/SoundTrack
+  lastModified: 637593095046435478
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-9033743679526482975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +256,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-8477243486253333760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Witch Sounds/State
+  m_EditorClassIdentifier: 
+  Name: State
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8454956016909351098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +339,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 185778
+--- !u!114 &-8282183373225518382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Lava
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Lava
+  guid: a0058daa01b52a4a8d9027a88fbc0a5d
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 74837
 --- !u!114 &-8243399616695856435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +402,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-8162938772165949879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Poison
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Poison
+  guid: 28546b0cc94d0349a5e82bc88469fbd8
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 22587
 --- !u!114 &-8121097135867718311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +568,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 497
+--- !u!114 &-7390360113859739079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Sun sounds/State
+  m_EditorClassIdentifier: 
+  Name: State
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7380541546654558144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +689,68 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-6949648412149612673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Player.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/Player.bank
+  Name: Player
+  StudioPath: bank:/Player
+  lastModified: 637593095045478865
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6907563642303035051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Player Footstep Concrete
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player Footstep Concrete
+  guid: 2b95d2b5badfda45a0908bb5ee0bedd8
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 360
+--- !u!114 &-6713557962057931486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave of Time/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-6646484336009930001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +771,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-6479148581507651942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Wood Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Wood Hit
+  guid: db096496fc83e3489302ec171a850bb5
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 560
 --- !u!114 &-6260676769761527266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +919,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-6035597402841967155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Torch
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Torch
+  guid: d6fb89b6d8690249b703c8c1f6984212
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 185678
 --- !u!114 &-5993739055145107532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -970,6 +1183,25 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-5174091958825106255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Props.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/Props.bank
+  Name: Props
+  StudioPath: bank:/Props
+  lastModified: 637593095045893100
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5115402255051078360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,6 +1328,47 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-4692576174641833411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637593095045196315
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2574
+  Exists: 1
+--- !u!114 &-4672801487310281231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mini Mob Sounds/State
+  m_EditorClassIdentifier: 
+  Name: State
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4654388050335043236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,6 +1409,30 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-4409157803588562611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mobs/Sun/Sun sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Mobs/Sun/Sun sounds
+  guid: 570338d869135343a65b27446eaf0f37
+  Banks:
+  - {fileID: 8976995442186308480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7390360113859739079}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4294081849546371578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1439,6 +1736,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-3400264346603044227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Wood Destroy
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Wood Destroy
+  guid: 0746f385611b73449516a6f2b885b341
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2056
 --- !u!114 &-3369547773334359025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1452,6 +1772,26 @@ MonoBehaviour:
   m_Name: parameter:/Door/Door Use
   m_EditorClassIdentifier: 
   Name: Door Use
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-3165375878714137432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave of Time/Outro
+  m_EditorClassIdentifier: 
+  Name: Outro
   Min: 0
   Max: 1
   Default: 0
@@ -1652,6 +1992,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-2421682528097947672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Predator/Verso 1
+  m_EditorClassIdentifier: 
+  Name: Verso 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-2381810971660999348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1779,6 +2139,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1941448690097773442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI Sounds/UIClick
+  m_EditorClassIdentifier: 
+  Path: event:/UI Sounds/UIClick
+  guid: 56011de1d79fd84fabc6c676362c4d5f
+  Banks:
+  - {fileID: 6083112883100926160}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1934473270448699360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,6 +2253,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1856168591858300995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Predator/Outro
+  m_EditorClassIdentifier: 
+  Name: Outro
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-1825177764622000397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2185,6 +2588,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-727581213216023996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/Hambience
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/Hambience
+  guid: 00e50698190ec4448eb283a935013f1b
+  Banks:
+  - {fileID: -9127225821822583606}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 169742
 --- !u!114 &-608854477842910831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2226,6 +2652,26 @@ MonoBehaviour:
     data2: 0
   Exists: 0
 --- !u!114 &-228984500841073729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MainMusic/TypeOfFloor
+  m_EditorClassIdentifier: 
+  Name: TypeOfFloor
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-226110170874337053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2301,42 +2747,42 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -2773770209401950977}
-  - {fileID: -7057327126134530158}
-  - {fileID: 1651671333093630512}
-  - {fileID: -802317191674290832}
-  - {fileID: 496089751368862791}
-  - {fileID: 2670726468037870791}
-  - {fileID: -5791917220609972412}
+  - {fileID: -4692576174641833411}
+  - {fileID: 8976995442186308480}
+  - {fileID: 2531401085418669065}
+  - {fileID: -6949648412149612673}
+  - {fileID: -5174091958825106255}
+  - {fileID: -9127225821822583606}
+  - {fileID: 6083112883100926160}
   EditorEvents:
-  - {fileID: -2811152083723141310}
-  - {fileID: -1772596258871117151}
-  - {fileID: 1004930267746278954}
-  - {fileID: -1348748692130769807}
-  - {fileID: -2673829963899272027}
-  - {fileID: -6203404837086751080}
-  - {fileID: 1911664577928188435}
-  - {fileID: -1012138135644910869}
-  - {fileID: -4057884951856343812}
-  - {fileID: -1934473270448699360}
-  - {fileID: -3837453311210312131}
-  - {fileID: -3922943328465111476}
-  - {fileID: -3819609751162320771}
-  - {fileID: -8284320283288233793}
-  - {fileID: 8791546024866623323}
-  - {fileID: 8086717491018667853}
-  - {fileID: 7661269922587297062}
-  - {fileID: 2980495796933142526}
-  - {fileID: -1913893066704629524}
-  - {fileID: 3550623720303356366}
-  - {fileID: 5071983198592659967}
-  - {fileID: -3509319881871736617}
-  - {fileID: -4143731190976851353}
+  - {fileID: -4409157803588562611}
+  - {fileID: 8726673461887190936}
+  - {fileID: 1255964769937157528}
+  - {fileID: 8854787601088566055}
+  - {fileID: 8766814803918881980}
+  - {fileID: -6907563642303035051}
+  - {fileID: 3203858563665093879}
+  - {fileID: 2125273809549484595}
+  - {fileID: 1068237062786813304}
+  - {fileID: 5466704754088901181}
+  - {fileID: -3400264346603044227}
+  - {fileID: -8162938772165949879}
+  - {fileID: 7412357104037910163}
+  - {fileID: 2609380223381623694}
+  - {fileID: -8282183373225518382}
+  - {fileID: -6035597402841967155}
+  - {fileID: -6479148581507651942}
+  - {fileID: -727581213216023996}
+  - {fileID: 1310775387333588736}
+  - {fileID: 2404440793320398419}
+  - {fileID: 8899099141632630153}
+  - {fileID: 8654144932369318827}
+  - {fileID: -1941448690097773442}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1651671333093630512}
+  - {fileID: 2531401085418669065}
   StringsBanks:
-  - {fileID: -2773770209401950977}
+  - {fileID: -4692576174641833411}
   stringsBankWriteTime: 637593095045196315
   cacheVersion: 6
 --- !u!114 &32755719371974341
@@ -2636,6 +3082,53 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1068237062786813304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Mele Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Mele Attack
+  guid: 8c305e37fc64114db76e11922d0c5960
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 497
+--- !u!114 &1255964769937157528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mobs/Witch/Witch Sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Mobs/Witch/Witch Sounds
+  guid: c20b5b7ba90ade4382d8a44f599c470f
+  Banks:
+  - {fileID: 8976995442186308480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -8477243486253333760}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1257771272101134139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,6 +3172,34 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &1310775387333588736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/Cave of Time
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/Cave of Time
+  guid: 2af7011052948747b4e6b5688674ebf9
+  Banks:
+  - {fileID: -9127225821822583606}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3165375878714137432}
+  - {fileID: 8111625823426736219}
+  - {fileID: 1681380969993135947}
+  - {fileID: 7641901544032321266}
+  - {fileID: -6713557962057931486}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 130600
 --- !u!114 &1316202060687053180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2741,6 +3262,26 @@ MonoBehaviour:
   lastModified: 637593095045176297
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &1681380969993135947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave of Time/Chorus
+  m_EditorClassIdentifier: 
+  Name: Chorus
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &1767328093669269102
 MonoBehaviour:
@@ -2876,6 +3417,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &2125273809549484595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Player Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Player Hit
+  guid: 78a314db64181a4ba75358b392c89779
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1054
 --- !u!114 &2163385843721304169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,6 +3520,33 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &2404440793320398419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/Predator
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/Predator
+  guid: b523a893c980524dbe96db7782bd29e6
+  Banks:
+  - {fileID: -9127225821822583606}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8621671931996436673}
+  - {fileID: 4968923612508213318}
+  - {fileID: -1856168591858300995}
+  - {fileID: -2421682528097947672}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 86600
 --- !u!114 &2417730488326799884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3003,6 +3594,48 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 55
+--- !u!114 &2531401085418669065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637593095045176297
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2609380223381623694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Campfire
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Campfire
+  guid: 56001b62c8c37e43a3742b34fdb82b65
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 185778
 --- !u!114 &2641347915596986009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,6 +3850,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 840
+--- !u!114 &3203858563665093879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/Girl Fight
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/Girl Fight
+  guid: 45fc41f61580004d9a918fb5ce295a3f
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 420
 --- !u!114 &3243436448431426639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3228,6 +3884,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Witch Sounds/State
+  m_EditorClassIdentifier: 
+  Name: State
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &3251636820852745098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Golem Audio/State
   m_EditorClassIdentifier: 
   Name: State
   Min: 0
@@ -3741,6 +4417,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &4968923612508213318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Predator/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &5051963227279889660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3868,6 +4564,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &5466704754088901181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/PowerUP
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/PowerUP
+  guid: bb97f48a05de9a45b533f917a2d2e898
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 952
 --- !u!114 &5519824106547356063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,6 +4707,25 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &6083112883100926160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UISounds.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/UISounds.bank
+  Name: UISounds
+  StudioPath: bank:/UISounds
+  lastModified: 637593095046615642
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6104276004250479953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4367,6 +5105,30 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &7412357104037910163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Props Sounds/Door
+  m_EditorClassIdentifier: 
+  Path: event:/Props Sounds/Door
+  guid: 53df91fc2d3ae1428b40834013624fac
+  Banks:
+  - {fileID: -5174091958825106255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 7524243443637157833}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1300
 --- !u!114 &7438489174749803649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4410,6 +5172,46 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &7524243443637157833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Door/Door Use
+  m_EditorClassIdentifier: 
+  Name: Door Use
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7641901544032321266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave of Time/Intro
+  m_EditorClassIdentifier: 
+  Name: Intro
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &7661269922587297062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4582,6 +5384,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &8111625823426736219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cave of Time/Verso 1
+  m_EditorClassIdentifier: 
+  Name: Verso 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8183693313076296393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4694,6 +5516,96 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 130600
+--- !u!114 &8621671931996436673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Predator/Intro
+  m_EditorClassIdentifier: 
+  Name: Intro
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &8654144932369318827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI Sounds/UISelect
+  m_EditorClassIdentifier: 
+  Path: event:/UI Sounds/UISelect
+  guid: 327798c25a121c418ca9271cf8a57428
+  Banks:
+  - {fileID: 6083112883100926160}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 55
+--- !u!114 &8726673461887190936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mobs/Golem/Golem Audio
+  m_EditorClassIdentifier: 
+  Path: event:/Mobs/Golem/Golem Audio
+  guid: 98261cfbf175ef468f79a6a45b328637
+  Banks:
+  - {fileID: 8976995442186308480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3251636820852745098}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8766814803918881980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player Sounds/GirlDash
+  m_EditorClassIdentifier: 
+  Path: event:/Player Sounds/GirlDash
+  guid: 058bab3293dd31499000e7ffda794fd7
+  Banks:
+  - {fileID: -6949648412149612673}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 859
 --- !u!114 &8791546024866623323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4717,6 +5629,73 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 74837
+--- !u!114 &8854787601088566055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mobs/Mini Mob/Mini Mob Sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Mobs/Mini Mob/Mini Mob Sounds
+  guid: fe5d9f14a6392342b39f72465f8f3c41
+  Banks:
+  - {fileID: 8976995442186308480}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4672801487310281231}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8899099141632630153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoundTrack/MainMusic
+  m_EditorClassIdentifier: 
+  Path: event:/SoundTrack/MainMusic
+  guid: dc8e53ac5821e84aae29e14df4cb2897
+  Banks:
+  - {fileID: -9127225821822583606}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -226110170874337053}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 114416
+--- !u!114 &8976995442186308480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Enemies.bank
+  m_EditorClassIdentifier: 
+  Path: Dungeon Of Simps/Build/Desktop/Enemies.bank
+  Name: Enemies
+  StudioPath: bank:/Enemies
+  lastModified: 637593095045156279
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &9016846087454330614
 MonoBehaviour:
   m_ObjectHideFlags: 0
