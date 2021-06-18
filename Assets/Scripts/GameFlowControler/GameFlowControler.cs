@@ -169,7 +169,6 @@ public class GameFlowControler : MonoBehaviour
         Time.timeScale = 1f;
     }
     void DeathMenu(){
-        Debug.Log("Ap");
         Controls.controls.PlayerControls.Disable();
         StartCoroutine(_DeathMenu());
     }
@@ -185,6 +184,8 @@ public class GameFlowControler : MonoBehaviour
         if(SceneManager.GetActiveScene().buildIndex!=0){
             OnPause = false;
             transitionsManager.SetTrigger("PauseMenu-Options");
+        }else if(PlayerHealth.dead){
+            transitionsManager.SetTrigger("DeathMenu-Options");
         }else{transitionsManager.SetTrigger("MainMenu-Options");}
     }
     public void HowToPlay(){
@@ -197,11 +198,14 @@ public class GameFlowControler : MonoBehaviour
     }
     public void ReturmFromOptions(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        if(SceneManager.GetActiveScene().buildIndex==0)
-        transitionsManager.SetTrigger("Options-MainMenu");
-        else{
+        if(SceneManager.GetActiveScene().buildIndex==0){
+            transitionsManager.SetTrigger("Options-MainMenu");
+        }
+        else if(PlayerHealth.dead){
+            transitionsManager.SetTrigger("Options-DeathMenu");
+        }else{
             OnPause = true;
-        transitionsManager.SetTrigger("Options-PauseMenu");
+            transitionsManager.SetTrigger("Options-PauseMenu");
         }
     }
     public void ReturmFromCredits(){
