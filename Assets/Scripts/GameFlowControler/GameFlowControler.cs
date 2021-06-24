@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
-
+using System;
+public enum UIPanel{
+    BackgroundMain, BackgroundPause,
+    MainMenu, PlayerUI,
+    DeathMenu, PauseMenu,
+    OptionsMenu, HowToPlay,
+    Credits, LoadingScene
+}
 public class GameFlowControler : MonoBehaviour
 {
     static GameFlowControler instance;
@@ -20,6 +27,7 @@ public class GameFlowControler : MonoBehaviour
     public static OnGameDelegate OnGame;
     public delegate void RestartDelegate();
     public static RestartDelegate Restart;
+    public static Dictionary<UIPanel, UIAction> UIGroup;
 
     void OnEnable(){
         PlayerHealth.OnDeath += DeathMenu;
@@ -33,6 +41,11 @@ public class GameFlowControler : MonoBehaviour
             DontDestroyOnLoad(this);
         } else{
             Destroy(gameObject);
+        }
+        UIGroup = new Dictionary<UIPanel, UIAction>();
+        foreach (UIPanel a in UIPanel.GetValues(typeof(UIPanel)))
+        {
+            UIGroup.Add(a, new UIAction());
         }
         levelNames = new List<string>();
         levelNames.Add("MainMenu");
@@ -66,7 +79,9 @@ public class GameFlowControler : MonoBehaviour
     IEnumerator _PlayGame(){
         Controls.controls.PlayerControls.Enable();
         Controls.controls.MainMenuControls.Disable();
-        transitionsManager.SetTrigger("MainMenu-Loader");
+        //transitionsManager.SetTrigger("MainMenu-Loader");
+        UIGroup[UIPanel.BackgroundMain].Disable(20);
+        UIGroup[UIPanel.LoadingScene].Enable(20);
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelNames[1]);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -75,7 +90,9 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
-        transitionsManager.SetTrigger("Loader-PlayerUI");
+        //transitionsManager.SetTrigger("Loader-PlayerUI");
+        UIGroup[UIPanel.LoadingScene].Disable(20);
+        UIGroup[UIPanel.PlayerUI].Enable(20);
         operation.allowSceneActivation = true;
         OnGame?.Invoke();
     }

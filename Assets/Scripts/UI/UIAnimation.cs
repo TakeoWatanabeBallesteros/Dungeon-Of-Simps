@@ -1,12 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+public class UIAction{
+    public Action<float> Enable;
+    public Action<float> Disable;
+}
 
 public class UIAnimation : MonoBehaviour
 {
     CanvasGroup canvasGroup;
+    [SerializeField]
+    UIPanel uiPanel;
     private void Awake() {
         canvasGroup = GetComponent<CanvasGroup>();
+    }
+    private void Start() {
+        GameFlowControler.UIGroup[uiPanel].Enable = (t) => Enable(t);
+        GameFlowControler.UIGroup[uiPanel].Disable = (t) => Disable(t);
     }
     public void Enable(float seconds){
         canvasGroup.interactable = true;
@@ -14,9 +26,11 @@ public class UIAnimation : MonoBehaviour
         StartCoroutine(Appear(seconds));
     }
     IEnumerator Appear(float seconds){
-        while(canvasGroup.alpha < 1){
-            canvasGroup.alpha += 0.4f;
-            yield return new WaitForSecondsRealtime(seconds);
+        float t=0;
+        while(t<seconds){
+            t+=Time.unscaledDeltaTime;
+            canvasGroup.alpha = Mathf.Lerp(0,1,t/seconds);
+            yield return null;
         }
     }
     public void Disable(float seconds){
