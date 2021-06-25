@@ -15,6 +15,7 @@ public enum UIPanel{
 }
 public class GameFlowControler : MonoBehaviour
 {
+    UIAnimation[] Panels;
     static GameFlowControler instance;
     bool OnPause = false;
     public TMP_Text count;
@@ -27,7 +28,7 @@ public class GameFlowControler : MonoBehaviour
     public static OnGameDelegate OnGame;
     public delegate void RestartDelegate();
     public static RestartDelegate Restart;
-    public static Dictionary<UIPanel, UIAction> UIGroup;
+    public Dictionary<UIPanel, UIAction> UIGroup;
 
     void OnEnable(){
         PlayerHealth.OnDeath += DeathMenu;
@@ -39,19 +40,20 @@ public class GameFlowControler : MonoBehaviour
         if(instance == null){
             instance = this;
             DontDestroyOnLoad(this);
+            Panels = FindObjectsOfType<UIAnimation>();
+            UIGroup = new Dictionary<UIPanel, UIAction>();
+            foreach (UIAnimation a in Panels)
+            {
+                UIGroup.Add(a.uiPanel, new UIAction());
+            }
+            levelNames = new List<string>();
+            levelNames.Add("MainMenu");
+            levelNames.Add("Level 01");
+            levelNames.Add("Level 02");
+            levelNames.Add("Level 03");
         } else{
             Destroy(gameObject);
         }
-        UIGroup = new Dictionary<UIPanel, UIAction>();
-        foreach (UIPanel a in UIPanel.GetValues(typeof(UIPanel)))
-        {
-            UIGroup.Add(a, new UIAction());
-        }
-        levelNames = new List<string>();
-        levelNames.Add("MainMenu");
-        levelNames.Add("Level 01");
-        levelNames.Add("Level 02");
-        levelNames.Add("Level 03");
     }
     void Start() {
         transitionsManager = GetComponent<Animator>();
@@ -80,8 +82,8 @@ public class GameFlowControler : MonoBehaviour
         Controls.controls.PlayerControls.Enable();
         Controls.controls.MainMenuControls.Disable();
         //transitionsManager.SetTrigger("MainMenu-Loader");
-        UIGroup[UIPanel.BackgroundMain].Disable(20);
-        UIGroup[UIPanel.LoadingScene].Enable(20);
+        UIGroup[UIPanel.BackgroundMain].Disable(1);
+        UIGroup[UIPanel.LoadingScene].Enable(1);
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelNames[1]);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -91,8 +93,8 @@ public class GameFlowControler : MonoBehaviour
             yield return null;
         }
         //transitionsManager.SetTrigger("Loader-PlayerUI");
-        UIGroup[UIPanel.LoadingScene].Disable(20);
-        UIGroup[UIPanel.PlayerUI].Enable(20);
+        UIGroup[UIPanel.LoadingScene].Disable(1);
+        UIGroup[UIPanel.PlayerUI].Enable(1);
         operation.allowSceneActivation = true;
         OnGame?.Invoke();
     }

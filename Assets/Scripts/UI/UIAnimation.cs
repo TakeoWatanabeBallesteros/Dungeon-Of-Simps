@@ -10,22 +10,22 @@ public class UIAction{
 
 public class UIAnimation : MonoBehaviour
 {
-    CanvasGroup canvasGroup;
-    [SerializeField]
-    UIPanel uiPanel;
+    public UIPanel uiPanel;
+    GameFlowControler gameFlowControler;
     private void Awake() {
-        canvasGroup = GetComponent<CanvasGroup>();
+        gameFlowControler = FindObjectOfType<GameFlowControler>();
     }
     private void Start() {
-        GameFlowControler.UIGroup[uiPanel].Enable = (t) => Enable(t);
-        GameFlowControler.UIGroup[uiPanel].Disable = (t) => Disable(t);
+        gameFlowControler.UIGroup[uiPanel].Enable = (t) => Enable(t);
+        gameFlowControler.UIGroup[uiPanel].Disable = (t) => Disable(t);
     }
     public void Enable(float seconds){
+        var canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
-        StartCoroutine(Appear(seconds));
+        StartCoroutine(Appear(canvasGroup, seconds));
     }
-    IEnumerator Appear(float seconds){
+    IEnumerator Appear(CanvasGroup canvasGroup ,float seconds){
         float t=0;
         while(t<seconds){
             t+=Time.unscaledDeltaTime;
@@ -34,11 +34,12 @@ public class UIAnimation : MonoBehaviour
         }
     }
     public void Disable(float seconds){
+        var canvasGroup = GetComponent<CanvasGroup>();
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
-        StartCoroutine(Disappear(seconds));
+        StartCoroutine(Disappear(canvasGroup, seconds));
     }
-    IEnumerator Disappear(float seconds){
+    IEnumerator Disappear(CanvasGroup canvasGroup, float seconds){
         float t=0;
         while(t<seconds){
             t+=Time.unscaledDeltaTime;
