@@ -43,9 +43,6 @@ public class PlayerSettings : MonoBehaviour
         }
     }
     private void Start() {
-        bus = RuntimeManager.GetBus(busPath);
-        busMusic = RuntimeManager.GetBus(busMusicPath);
-        busGameplay = RuntimeManager.GetBus(busGameplayPath);
         fullScreen = GameObject.FindGameObjectWithTag("FullScreen").GetComponent<Toggle>();
         if(PlayerPrefs.GetInt("firstTime")==0){
             PlayerPrefs.SetInt("firstTime", 1);
@@ -189,5 +186,23 @@ public class PlayerSettings : MonoBehaviour
          uniqResolutionsList.Add(newResolution);
      }
      return uniqResolutionsList;
- }
+    }
+    void StartRes(){
+        if(PlayerPrefs.GetInt("firstTime")==0){
+
+        } else{
+
+        }
+    }
+    void StartVolume(){
+        bus = RuntimeManager.GetBus(busPath);
+        busMusic = RuntimeManager.GetBus(busMusicPath);
+        busGameplay = RuntimeManager.GetBus(busGameplayPath);
+        if(PlayerPrefs.GetInt("firstTime")==0){
+        }
+    }
+    void StartFullScreen(){
+        if(PlayerPrefs.GetInt("firstTime")==0){
+        }
+    }
 }
