@@ -20,7 +20,6 @@ public class GameFlowControler : MonoBehaviour
     bool OnPause = false;
     public TMP_Text count;
     List<string> levelNames;
-    Animator transitionsManager;
     public Slider slider;
     public delegate void OnMenuDelegate();
     public static OnMenuDelegate OnMenu;
@@ -56,7 +55,6 @@ public class GameFlowControler : MonoBehaviour
         }
     }
     void Start() {
-        transitionsManager = GetComponent<Animator>();
         Controls.controls.PlayerControls.TogglePause.started += _=>EnablePauseMenu();
         Controls.controls.MenuControls.TogglePause.started += _=>ReturnGame();
         #if UNITY_EDITOR
@@ -81,9 +79,8 @@ public class GameFlowControler : MonoBehaviour
     IEnumerator _PlayGame(){
         Controls.controls.PlayerControls.Enable();
         Controls.controls.MainMenuControls.Disable();
-        //transitionsManager.SetTrigger("MainMenu-Loader");
-        UIGroup[UIPanel.BackgroundMain].Disable(1);
-        UIGroup[UIPanel.LoadingScene].Enable(1);
+        UIGroup[UIPanel.MainMenu].Disable(.2f);
+        UIGroup[UIPanel.LoadingScene].Enable(.2f);
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelNames[1]);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -92,9 +89,9 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
-        //transitionsManager.SetTrigger("Loader-PlayerUI");
-        UIGroup[UIPanel.LoadingScene].Disable(1);
-        UIGroup[UIPanel.PlayerUI].Enable(1);
+        UIGroup[UIPanel.BackgroundMain].Disable(.2f);
+        UIGroup[UIPanel.LoadingScene].Disable(.2f);
+        UIGroup[UIPanel.PlayerUI].Enable(.2f);
         operation.allowSceneActivation = true;
         OnGame?.Invoke();
     }
@@ -105,7 +102,9 @@ public class GameFlowControler : MonoBehaviour
         Controls.controls.PlayerControls.Disable();
         Controls.controls.MenuControls.Enable();
         OnMenu?.Invoke();
-        transitionsManager.SetTrigger("PlayerUI-PauseMenu");
+        UIGroup[UIPanel.PlayerUI].Disable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Enable(.2f);
+        UIGroup[UIPanel.PauseMenu].Enable(.2f);
         Time.timeScale = 0f;
     }
     public void ReturnGame(){
@@ -114,11 +113,14 @@ public class GameFlowControler : MonoBehaviour
         Controls.controls.PlayerControls.Enable();
         Controls.controls.MenuControls.Disable();
         OnGame?.Invoke();
-        transitionsManager.SetTrigger("PauseMenu-PlayerUI");
+        UIGroup[UIPanel.PlayerUI].Enable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Disable(.2f);
+        UIGroup[UIPanel.PauseMenu].Disable(.2f);
         Time.timeScale = 1f;
         }else{
             OnPause = true;
-            transitionsManager.SetTrigger("Options-PauseMenu");
+            UIGroup[UIPanel.PauseMenu].Enable(.2f);
+            UIGroup[UIPanel.OptionsMenu].Disable(.2f);
         }
     }
     public void ReloadGame(){
@@ -126,7 +128,10 @@ public class GameFlowControler : MonoBehaviour
         StartCoroutine(_ReloadGame());
     }
     IEnumerator _ReloadGame(){
-        transitionsManager.SetTrigger("DeathMenu-Loader");
+        UIGroup[UIPanel.LoadingScene].Enable(.2f);
+        UIGroup[UIPanel.BackgroundMain].Enable(.2f);
+        UIGroup[UIPanel.DeathMenu].Disable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Disable(.2f);
         AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -135,7 +140,9 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
-        transitionsManager.SetTrigger("Loader-PlayerUI");
+        UIGroup[UIPanel.LoadingScene].Disable(.2f);
+        UIGroup[UIPanel.BackgroundMain].Disable(.2f);
+        UIGroup[UIPanel.PlayerUI].Enable(.2f);
         Restart?.Invoke();
         PlayerMovement.CanMove?.Invoke();
         Controls.controls.PlayerControls.Enable();
@@ -148,7 +155,10 @@ public class GameFlowControler : MonoBehaviour
         StartCoroutine(_GoMainMenu());
     }
     IEnumerator _GoMainMenu(){
-        transitionsManager.SetTrigger("PauseMenu-Loader");
+        UIGroup[UIPanel.LoadingScene].Enable(.2f);
+        UIGroup[UIPanel.BackgroundMain].Enable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Disable(.2f);
+        UIGroup[UIPanel.PauseMenu].Disable(.2f);
         AsyncOperation operation = SceneManager.LoadSceneAsync(0);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -157,7 +167,8 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
-        transitionsManager.SetTrigger("Loader-MainMenu");
+        UIGroup[UIPanel.LoadingScene].Disable(.2f);
+        UIGroup[UIPanel.MainMenu].Enable(.2f);
         operation.allowSceneActivation = true;
         Controls.controls.MenuControls.Disable();
         Controls.controls.PlayerControls.Disable();
@@ -169,7 +180,10 @@ public class GameFlowControler : MonoBehaviour
         StartCoroutine(_DeathGoMainMenu());
     }
     IEnumerator _DeathGoMainMenu(){
-        transitionsManager.SetTrigger("DeathMenu-Loader");
+        UIGroup[UIPanel.DeathMenu].Disable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Disable(.2f);
+        UIGroup[UIPanel.LoadingScene].Enable(.2f);
+        UIGroup[UIPanel.BackgroundMain].Enable(.2f);
         AsyncOperation operation = SceneManager.LoadSceneAsync(0);
         operation.allowSceneActivation = false;
         while(operation.progress<0.9f){
@@ -178,7 +192,8 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
-        transitionsManager.SetTrigger("Loader-MainMenu");
+        UIGroup[UIPanel.LoadingScene].Disable(.2f);
+        UIGroup[UIPanel.MainMenu].Enable(.2f);
         Restart?.Invoke();
         PlayerMovement.CanMove?.Invoke();
         Controls.controls.MenuControls.Disable();
@@ -195,45 +210,58 @@ public class GameFlowControler : MonoBehaviour
         yield return new WaitForSeconds(1.4f);
         Controls.controls.MainMenuControls.Enable();
         OnMenu?.Invoke();
-        transitionsManager.SetTrigger("PlayerUI-DeathMenu");
+        UIGroup[UIPanel.DeathMenu].Enable(.2f);
+        UIGroup[UIPanel.BackgroundPause].Enable(.2f);
         Time.timeScale = 0f;
     }
     public void OptionsMenu(){
         UIAudioManager.Instance.PlayUIClickEvent();
         if(SceneManager.GetActiveScene().buildIndex!=0){
             OnPause = false;
-            transitionsManager.SetTrigger("PauseMenu-Options");
+            UIGroup[UIPanel.PauseMenu].Disable(.2f);
+            UIGroup[UIPanel.OptionsMenu].Enable(.2f);
         }else if(PlayerHealth.dead){
-            transitionsManager.SetTrigger("DeathMenu-Options");
-        }else{transitionsManager.SetTrigger("MainMenu-Options");}
+            UIGroup[UIPanel.OptionsMenu].Enable(.2f);
+            UIGroup[UIPanel.DeathMenu].Disable(.2f);
+        }else{
+            UIGroup[UIPanel.OptionsMenu].Enable(.2f);
+            UIGroup[UIPanel.MainMenu].Disable(.2f);
+        }
     }
     public void HowToPlay(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        transitionsManager.SetTrigger("MainMenu-HowToPlay");
+        UIGroup[UIPanel.HowToPlay].Enable(.2f);
+        UIGroup[UIPanel.MainMenu].Disable(.2f);
     }
     public void Credits(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        transitionsManager.SetTrigger("MainMenu-Credits");
+        UIGroup[UIPanel.Credits].Enable(.2f);
+        UIGroup[UIPanel.MainMenu].Disable(.2f);
     }
     public void ReturmFromOptions(){
         UIAudioManager.Instance.PlayUIClickEvent();
         if(SceneManager.GetActiveScene().buildIndex==0){
-            transitionsManager.SetTrigger("Options-MainMenu");
+            UIGroup[UIPanel.OptionsMenu].Disable(.2f);
+            UIGroup[UIPanel.MainMenu].Enable(.2f);
         }
         else if(PlayerHealth.dead){
-            transitionsManager.SetTrigger("Options-DeathMenu");
+            UIGroup[UIPanel.OptionsMenu].Disable(.2f);
+            UIGroup[UIPanel.DeathMenu].Enable(.2f);
         }else{
             OnPause = true;
-            transitionsManager.SetTrigger("Options-PauseMenu");
+            UIGroup[UIPanel.PauseMenu].Enable(.2f);
+            UIGroup[UIPanel.OptionsMenu].Disable(.2f);
         }
     }
     public void ReturmFromCredits(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        transitionsManager.SetTrigger("Credits-MainMenu");
+        UIGroup[UIPanel.Credits].Disable(.2f);
+        UIGroup[UIPanel.MainMenu].Enable(.2f);
     }
     public void ReturmFromHowToPlay(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        transitionsManager.SetTrigger("HowToPlay-MainMenu");
+        UIGroup[UIPanel.HowToPlay].Disable(.2f);
+        UIGroup[UIPanel.MainMenu].Enable(.2f);
     }
 
     public void QuitGame(){
@@ -255,7 +283,9 @@ public class GameFlowControler : MonoBehaviour
     IEnumerator LoadAsynchronously(int indexScene){
         if(indexScene==0){StartCoroutine(_GoMainMenu());}
         else{
-            transitionsManager.SetTrigger("PlayerUI-Loader");
+            UIGroup[UIPanel.LoadingScene].Enable(.2f);
+            UIGroup[UIPanel.BackgroundMain].Enable(.2f);
+            UIGroup[UIPanel.PlayerUI].Disable(.2f);
             AsyncOperation operation = SceneManager.LoadSceneAsync(levelNames[indexScene]);
             operation.allowSceneActivation = false;
             while(operation.progress<0.9f){
@@ -264,7 +294,9 @@ public class GameFlowControler : MonoBehaviour
                 count.text = progress * 100f + "%";
                 yield return null;
             }
-            transitionsManager.SetTrigger("Loader-PlayerUI");
+            UIGroup[UIPanel.BackgroundMain].Disable(.2f);
+            UIGroup[UIPanel.LoadingScene].Disable(.2f);
+            UIGroup[UIPanel.PlayerUI].Enable(.2f);
             operation.allowSceneActivation = true;
         }
     }

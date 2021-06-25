@@ -6448,7 +6448,6 @@ GameObject:
   - component: {fileID: 4648551255809141586}
   - component: {fileID: 1796837580934755486}
   - component: {fileID: 1040199041899716222}
-  - component: {fileID: 4866205506919181366}
   m_Layer: 5
   m_Name: UI
   m_TagString: UI
@@ -6600,25 +6599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiClickEvent: event:/UI Sounds/UIClick
   uiSelectEvent: event:/UI Sounds/UISelect
---- !u!95 &4866205506919181366
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3189722079149686532}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3fb84ad518940b7459236825c1fd51aa, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 2
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3189722079667254819
 GameObject:
   m_ObjectHideFlags: 0
