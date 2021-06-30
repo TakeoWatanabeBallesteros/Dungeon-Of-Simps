@@ -44,75 +44,10 @@ public class PlayerSettings : MonoBehaviour
     }
     private void Start() {
         fullScreen = GameObject.FindGameObjectWithTag("FullScreen").GetComponent<Toggle>();
-        if(PlayerPrefs.GetInt("firstTime")==0){
-            PlayerPrefs.SetInt("firstTime", 1);
-            PlayerPrefs.SetInt("window", 1);
-            Screen.fullScreen = true;
-            fullScreen.isOn = true;
-            resolutions = GetResolutions();
-            resDropdown = GameObject.FindGameObjectWithTag("Resolutions").GetComponent<TMP_Dropdown>();
-            resDropdown.ClearOptions();
-            List<string> options = new List<string>();
-            PlayerPrefs.SetInt("resIndx", resolutions.Count-1);
-            for (int i = 0; i < resolutions.Count; i++)
-            {
-                string option = resolutions[i].width + "x" + resolutions[i].height;
-                options.Add(option);
-            }
-            resDropdown.AddOptions(options);
-            resDropdown.value = PlayerPrefs.GetInt("resIndx");
-            resDropdown.RefreshShownValue();
-            ChangeRes(PlayerPrefs.GetInt("resIndx"));
-            qualityDropdown = GameObject.FindGameObjectWithTag("Quality").GetComponent<TMP_Dropdown>();
-            PlayerPrefs.SetInt("qualityIndx", 2);
-            qualityDropdown.value = PlayerPrefs.GetInt("qualityIndx");
-            qualityDropdown.RefreshShownValue();
-            QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qualityIndx"));
-            volumeSlider = GameObject.FindGameObjectWithTag("Volume").GetComponent<Slider>();
-            PlayerPrefs.SetFloat("volume", 1);
-            volumeSlider.value = PlayerPrefs.GetFloat("volume");
-            bus.setVolume(PlayerPrefs.GetFloat("volume"));
-            volumeMusicSlider = GameObject.FindGameObjectWithTag("VolumeMusic").GetComponent<Slider>();
-            PlayerPrefs.SetFloat("volumeMusic", 1);
-            volumeMusicSlider.value = PlayerPrefs.GetFloat("volumeMusic");
-            busMusic.setVolume(PlayerPrefs.GetFloat("volumeMusic"));
-            volumeGameplaySlider = GameObject.FindGameObjectWithTag("VolumeGameplay").GetComponent<Slider>();
-            PlayerPrefs.SetFloat("volumeGameplay", 1);
-            volumeGameplaySlider.value = PlayerPrefs.GetFloat("volumeGameplay");
-            busGameplay.setVolume(PlayerPrefs.GetFloat("volumeGameplay"));
-        }else{
-            if(PlayerPrefs.GetInt("window")==1){
-            Screen.fullScreen = true;
-            fullScreen.isOn = true;
-            }
-            resolutions = GetResolutions();
-            resDropdown = GameObject.FindGameObjectWithTag("Resolutions").GetComponent<TMP_Dropdown>();
-            resDropdown.ClearOptions();
-            List<string> options = new List<string>();
-            PlayerPrefs.SetInt("resIndx", resolutions.Count-1);
-            for (int i = 0; i < resolutions.Count; i++)
-            {
-                string option = resolutions[i].width + "x" + resolutions[i].height;
-                options.Add(option);
-            }
-            resDropdown.AddOptions(options);
-            resDropdown.value = PlayerPrefs.GetInt("resIndx");
-            resDropdown.RefreshShownValue();
-            ChangeRes(PlayerPrefs.GetInt("resIndx"));
-            qualityDropdown = GameObject.FindGameObjectWithTag("Quality").GetComponent<TMP_Dropdown>();
-            qualityDropdown.value = PlayerPrefs.GetInt("qualityIndx");
-            qualityDropdown.RefreshShownValue();
-            QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qualityIndx"));
-            volumeSlider = GameObject.FindGameObjectWithTag("Volume").GetComponent<Slider>();
-            volumeSlider.value = PlayerPrefs.GetFloat("volume");
-            bus.setVolume(PlayerPrefs.GetFloat("volume"));
-            volumeMusicSlider = GameObject.FindGameObjectWithTag("VolumeMusic").GetComponent<Slider>();
-            volumeMusicSlider.value = PlayerPrefs.GetFloat("volumeMusic");
-            busMusic.setVolume(PlayerPrefs.GetFloat("volumeMusic"));
-            volumeGameplaySlider = GameObject.FindGameObjectWithTag("VolumeGameplay").GetComponent<Slider>();
-            volumeGameplaySlider.value = PlayerPrefs.GetFloat("volumeGameplay");
-            busGameplay.setVolume(PlayerPrefs.GetFloat("volumeGameplay"));
-        }  
+        StartFullScreen();
+        StartRes();
+        StartVolume();
+        PlayerPrefs.SetInt("firstTime", 1);
     }
     public void SetVolune(float volume){
         bus.setVolume(volume);
@@ -189,9 +124,44 @@ public class PlayerSettings : MonoBehaviour
     }
     void StartRes(){
         if(PlayerPrefs.GetInt("firstTime")==0){
-
+            resolutions = GetResolutions();
+            resDropdown = GameObject.FindGameObjectWithTag("Resolutions").GetComponent<TMP_Dropdown>();
+            resDropdown.ClearOptions();
+            List<string> options = new List<string>();
+            PlayerPrefs.SetInt("resIndx", resolutions.Count-1);
+            for (int i = 0; i < resolutions.Count; i++)
+            {
+                string option = resolutions[i].width + "x" + resolutions[i].height;
+                options.Add(option);
+            }
+            resDropdown.AddOptions(options);
+            resDropdown.value = PlayerPrefs.GetInt("resIndx");
+            resDropdown.RefreshShownValue();
+            ChangeRes(PlayerPrefs.GetInt("resIndx"));
+            qualityDropdown = GameObject.FindGameObjectWithTag("Quality").GetComponent<TMP_Dropdown>();
+            PlayerPrefs.SetInt("qualityIndx", 2);
+            qualityDropdown.value = PlayerPrefs.GetInt("qualityIndx");
+            qualityDropdown.RefreshShownValue();
+            QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qualityIndx"));
         } else{
-
+            resolutions = GetResolutions();
+            resDropdown = GameObject.FindGameObjectWithTag("Resolutions").GetComponent<TMP_Dropdown>();
+            resDropdown.ClearOptions();
+            List<string> options = new List<string>();
+            PlayerPrefs.SetInt("resIndx", resolutions.Count-1);
+            for (int i = 0; i < resolutions.Count; i++)
+            {
+                string option = resolutions[i].width + "x" + resolutions[i].height;
+                options.Add(option);
+            }
+            resDropdown.AddOptions(options);
+            resDropdown.value = PlayerPrefs.GetInt("resIndx");
+            resDropdown.RefreshShownValue();
+            ChangeRes(PlayerPrefs.GetInt("resIndx"));
+            qualityDropdown = GameObject.FindGameObjectWithTag("Quality").GetComponent<TMP_Dropdown>();
+            qualityDropdown.value = PlayerPrefs.GetInt("qualityIndx");
+            qualityDropdown.RefreshShownValue();
+            QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qualityIndx"));
         }
     }
     void StartVolume(){
@@ -199,10 +169,43 @@ public class PlayerSettings : MonoBehaviour
         busMusic = RuntimeManager.GetBus(busMusicPath);
         busGameplay = RuntimeManager.GetBus(busGameplayPath);
         if(PlayerPrefs.GetInt("firstTime")==0){
+            volumeSlider = GameObject.FindGameObjectWithTag("Volume").GetComponent<Slider>();
+            PlayerPrefs.SetFloat("volume", 1);
+            volumeSlider.value = PlayerPrefs.GetFloat("volume");
+            bus.setVolume(PlayerPrefs.GetFloat("volume"));
+            volumeMusicSlider = GameObject.FindGameObjectWithTag("VolumeMusic").GetComponent<Slider>();
+            PlayerPrefs.SetFloat("volumeMusic", 1);
+            volumeMusicSlider.value = PlayerPrefs.GetFloat("volumeMusic");
+            busMusic.setVolume(PlayerPrefs.GetFloat("volumeMusic"));
+            volumeGameplaySlider = GameObject.FindGameObjectWithTag("VolumeGameplay").GetComponent<Slider>();
+            PlayerPrefs.SetFloat("volumeGameplay", 1);
+            volumeGameplaySlider.value = PlayerPrefs.GetFloat("volumeGameplay");
+            busGameplay.setVolume(PlayerPrefs.GetFloat("volumeGameplay"));
+        }else{
+            volumeSlider = GameObject.FindGameObjectWithTag("Volume").GetComponent<Slider>();
+            volumeSlider.value = PlayerPrefs.GetFloat("volume");
+            bus.setVolume(PlayerPrefs.GetFloat("volume"));
+            volumeMusicSlider = GameObject.FindGameObjectWithTag("VolumeMusic").GetComponent<Slider>();
+            volumeMusicSlider.value = PlayerPrefs.GetFloat("volumeMusic");
+            busMusic.setVolume(PlayerPrefs.GetFloat("volumeMusic"));
+            volumeGameplaySlider = GameObject.FindGameObjectWithTag("VolumeGameplay").GetComponent<Slider>();
+            volumeGameplaySlider.value = PlayerPrefs.GetFloat("volumeGameplay");
+            busGameplay.setVolume(PlayerPrefs.GetFloat("volumeGameplay"));
         }
     }
     void StartFullScreen(){
         if(PlayerPrefs.GetInt("firstTime")==0){
+            PlayerPrefs.SetInt("window", 1);
+            Screen.fullScreen = true;
+            fullScreen.isOn = true;
+        }else{
+            if(PlayerPrefs.GetInt("window")==1){
+            Screen.fullScreen = true;
+            fullScreen.isOn = true;
+            }else{
+                Screen.fullScreen = false;
+                fullScreen.isOn = false;
+            }
         }
     }
 }

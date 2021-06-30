@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour, IDamageTaker
     public float health;
     public float currentHealth => health;
     public GameObject trigger;
+    public GameObject  coinPrefab;
 
     public delegate void OnHitDelegate();
     public OnHitDelegate OnHit;
@@ -56,6 +57,7 @@ public class EnemyHealth : MonoBehaviour, IDamageTaker
                 EnemyAudioManager.Instance.PlaySunEvent( 2, gameObject.transform.position);
                 break;
             }
+            Instantiate(coinPrefab, transform.position, Quaternion.identity);
             dead = true;
             Destroy(trigger);
             OnDeath?.Invoke();

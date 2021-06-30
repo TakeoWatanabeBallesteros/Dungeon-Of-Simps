@@ -11,13 +11,15 @@ public enum UIPanel{
     MainMenu, PlayerUI,
     DeathMenu, PauseMenu,
     OptionsMenu, HowToPlay,
-    Credits, LoadingScene
+    Credits, LoadingScene,
+    Shop
 }
 public class GameFlowControler : MonoBehaviour
 {
     UIAnimation[] Panels;
     static GameFlowControler instance;
     bool OnPause = false;
+    bool OnShop = false;
     public TMP_Text count;
     List<string> levelNames;
     public Slider slider;
@@ -78,8 +80,7 @@ public class GameFlowControler : MonoBehaviour
         StartCoroutine(_PlayGame());
     }
     IEnumerator _PlayGame(){
-        Controls.controls.PlayerControls.Enable();
-        Controls.controls.MainMenuControls.Disable();
+        OnShop = true;
         UIGroup[UIPanel.MainMenu].Disable(transitionTime);
         UIGroup[UIPanel.LoadingScene].Enable(transitionTime);
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelNames[1]);
@@ -90,9 +91,10 @@ public class GameFlowControler : MonoBehaviour
             count.text = progress * 100f + "%";
             yield return null;
         }
+        Time.timeScale = 0;
         UIGroup[UIPanel.BackgroundMain].Disable(transitionTime);
         UIGroup[UIPanel.LoadingScene].Disable(transitionTime);
-        UIGroup[UIPanel.PlayerUI].Enable(transitionTime);
+        UIGroup[UIPanel.Shop].Enable(transitionTime);
         operation.allowSceneActivation = true;
         OnGame?.Invoke();
     }
@@ -111,13 +113,22 @@ public class GameFlowControler : MonoBehaviour
     public void ReturnGame(){
         UIAudioManager.Instance.PlayUIClickEvent();
         if(OnPause){
-        Controls.controls.PlayerControls.Enable();
-        Controls.controls.MenuControls.Disable();
-        OnGame?.Invoke();
-        UIGroup[UIPanel.PlayerUI].Enable(transitionTime);
-        UIGroup[UIPanel.BackgroundPause].Disable(transitionTime);
-        UIGroup[UIPanel.PauseMenu].Disable(transitionTime);
-        Time.timeScale = 1f;
+            OnPause = false;
+            Controls.controls.PlayerControls.Enable();
+            Controls.controls.MenuControls.Disable();
+            OnGame?.Invoke();
+            UIGroup[UIPanel.PlayerUI].Enable(transitionTime);
+            UIGroup[UIPanel.BackgroundPause].Disable(transitionTime);
+            UIGroup[UIPanel.PauseMenu].Disable(transitionTime);
+            Time.timeScale = 1f;
+        }else if(OnShop){
+            OnShop = false;
+            Controls.controls.PlayerControls.Enable();
+            Controls.controls.MenuControls.Disable();
+            OnGame?.Invoke();
+            UIGroup[UIPanel.PlayerUI].Enable(transitionTime);
+            UIGroup[UIPanel.Shop].Disable(transitionTime);
+            Time.timeScale = 1f;
         }else{
             OnPause = true;
             UIGroup[UIPanel.PauseMenu].Enable(transitionTime);
@@ -152,6 +163,7 @@ public class GameFlowControler : MonoBehaviour
         Time.timeScale = 1f;
     }
     public void GoMainMenu(){
+        OnPause = false;
         UIAudioManager.Instance.PlayUIClickEvent();
         StartCoroutine(_GoMainMenu());
     }
@@ -208,22 +220,24 @@ public class GameFlowControler : MonoBehaviour
         StartCoroutine(_DeathMenu());
     }
     IEnumerator _DeathMenu(){
+        AudioManager.StopSteps?.Invoke();
         yield return new WaitForSeconds(1.4f);
         Controls.controls.MainMenuControls.Enable();
         OnMenu?.Invoke();
+        UIGroup[UIPanel.PlayerUI].Disable(transitionTime);
         UIGroup[UIPanel.DeathMenu].Enable(transitionTime);
         UIGroup[UIPanel.BackgroundPause].Enable(transitionTime);
         Time.timeScale = 0f;
     }
     public void OptionsMenu(){
         UIAudioManager.Instance.PlayUIClickEvent();
-        if(SceneManager.GetActiveScene().buildIndex!=0){
+        if(PlayerHealth.dead){
+            UIGroup[UIPanel.OptionsMenu].Enable(transitionTime);
+            UIGroup[UIPanel.DeathMenu].Disable(transitionTime);
+        }else if(SceneManager.GetActiveScene().buildIndex!=0){
             OnPause = false;
             UIGroup[UIPanel.PauseMenu].Disable(transitionTime);
             UIGroup[UIPanel.OptionsMenu].Enable(transitionTime);
-        }else if(PlayerHealth.dead){
-            UIGroup[UIPanel.OptionsMenu].Enable(transitionTime);
-            UIGroup[UIPanel.DeathMenu].Disable(transitionTime);
         }else{
             UIGroup[UIPanel.OptionsMenu].Enable(transitionTime);
             UIGroup[UIPanel.MainMenu].Disable(transitionTime);

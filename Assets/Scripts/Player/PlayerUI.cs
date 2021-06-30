@@ -10,19 +10,25 @@ public class PlayerUI : MonoBehaviour
     PlayerAbilities playerAbilities;
     PlayerHealth playerHealth;
     public Image[] hearts;
-    public TMP_Text defaultShoot, tripleShoot, circleShoot;
+    public TMP_Text defaultShoot, tripleShoot, circleShoot, coins, coins2, potions;
     public Sprite fullHearts, halfHearts, emptyHearts;
     private void OnEnable() {
         PlayerHealth.OnHit += FitNumOfHearts;
         PlayerHealth.LifePowerUp += FitNumOfHearts;
         BulletSpawner.GunType += TypeOfShoot;
         PlayerHealth.CheckHealth += FitNumOfHearts;
+        PlayerHealth.BoughtPotion += UpdatePotions;
+        PlayerHealth.UsePotion += UpdatePotions;
+        PlayerCoinsManager.MoreCoins += UpdateCoins;
     }
     private void OnDisable(){
         PlayerHealth.OnHit -= FitNumOfHearts;
         PlayerHealth.LifePowerUp -= FitNumOfHearts;
         BulletSpawner.GunType -= TypeOfShoot;
         PlayerHealth.CheckHealth -= FitNumOfHearts;
+        PlayerHealth.BoughtPotion -= UpdatePotions;
+        PlayerHealth.UsePotion -= UpdatePotions;
+        PlayerCoinsManager.MoreCoins -= UpdateCoins;
     }
     // Start is called before the first frame update
     void Start()
@@ -42,6 +48,13 @@ public class PlayerUI : MonoBehaviour
         dashCount.text = ""+Mathf.Round(playerAbilities.dashCoolDown);
         if(playerAbilities.slowMoCoolDown >=0)
         SlowmoCount.text = ""+Mathf.Round(playerAbilities.slowMoCoolDown);
+    }
+    void UpdatePotions(){
+        potions.text = ""+PlayerHealth.healthPotions;
+    }
+    void UpdateCoins(){
+        coins.text = ""+PlayerCoinsManager.coins;
+        coins2.text = ""+PlayerCoinsManager.coins;;
     }
     void FitNumOfHearts(){
         for (int i = 0; i < hearts.Length; i++)

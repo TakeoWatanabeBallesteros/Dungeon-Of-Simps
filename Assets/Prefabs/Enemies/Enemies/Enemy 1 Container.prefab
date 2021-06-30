@@ -177,6 +177,8 @@ MonoBehaviour:
   ID: 0
   health: 4
   trigger: {fileID: 5604812694191682542}
+  coinPrefab: {fileID: 5475710887919139877, guid: 3ee8b6172ce4a034285116ba3fb06f29,
+    type: 3}
 --- !u!114 &6535926355119594453
 MonoBehaviour:
   m_ObjectHideFlags: 0

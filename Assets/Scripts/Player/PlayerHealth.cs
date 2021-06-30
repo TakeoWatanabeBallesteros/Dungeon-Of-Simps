@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour, IDamageTaker
     public float currentHealth => health;
     public bool inmune = false;
     public static bool dead;
+    public static int healthPotions;
     
     public delegate void OnHitDelegate();
     public static OnHitDelegate OnHit;
@@ -24,6 +25,10 @@ public class PlayerHealth : MonoBehaviour, IDamageTaker
     public static LowHealthDelegate LowHealth;
     public delegate void CheckHealthDelegate();
     public static CheckHealthDelegate CheckHealth;
+    public delegate void BoughtPotionDelegate();
+    public static BoughtPotionDelegate BoughtPotion;
+    public delegate void UsePotionDelegate();
+    public static UsePotionDelegate UsePotion;
 
     void OnEnable() {
         PlayerAbilities.OnDash += _Inmune;
@@ -40,6 +45,7 @@ public class PlayerHealth : MonoBehaviour, IDamageTaker
     }
     void Start()
     {
+        Controls.controls.PlayerControls.Health.started +=_=>Healthing();
         rb = GetComponent<Rigidbody2D>();
         dead = false;
     }
@@ -94,12 +100,21 @@ public class PlayerHealth : MonoBehaviour, IDamageTaker
         if(health<9&&totalHealth<10){
             totalHealth++;
             health++;
-        }else if(health<9){
-            health++;
-        }else{
-            health = 10;
         }
         CheckHealth?.Invoke();
+    }
+    void Healthing(){
+        if(healthPotions>0){
+            healthPotions--;
+            if(health<totalHealth-1){
+                health++;
+            }else{
+                health = totalHealth;
+            }
+            AudioManager.Instance.PlayPowerupEvent(transform.position);
+            CheckHealth?.Invoke();
+        }
+        UsePotion?.Invoke();
     }
     void ResetHealth(){
         dead = false;

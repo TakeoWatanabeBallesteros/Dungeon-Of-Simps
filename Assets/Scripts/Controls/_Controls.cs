@@ -81,6 +81,14 @@ public class @_Controls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Health"",
+                    ""type"": ""Button"",
+                    ""id"": ""4eb84dcd-3cc9-480a-9b34-7b3a838215ce"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -345,6 +353,28 @@ public class @_Controls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""SwitchGun"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""238eb1cb-5f4e-4762-aee9-e247d2425beb"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Health"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eb5f1a6c-8c3d-4ab7-856e-38f44e6768e4"",
+                    ""path"": ""<Gamepad>/rightStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Health"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1449,6 +1479,7 @@ public class @_Controls : IInputActionCollection, IDisposable
         m_PlayerControls_SlowMotion = m_PlayerControls.FindAction("SlowMotion", throwIfNotFound: true);
         m_PlayerControls_TogglePause = m_PlayerControls.FindAction("TogglePause", throwIfNotFound: true);
         m_PlayerControls_SwitchGun = m_PlayerControls.FindAction("SwitchGun", throwIfNotFound: true);
+        m_PlayerControls_Health = m_PlayerControls.FindAction("Health", throwIfNotFound: true);
         // Menu Controls
         m_MenuControls = asset.FindActionMap("Menu Controls", throwIfNotFound: true);
         m_MenuControls_Navigate = m_MenuControls.FindAction("Navigate", throwIfNotFound: true);
@@ -1533,6 +1564,7 @@ public class @_Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerControls_SlowMotion;
     private readonly InputAction m_PlayerControls_TogglePause;
     private readonly InputAction m_PlayerControls_SwitchGun;
+    private readonly InputAction m_PlayerControls_Health;
     public struct PlayerControlsActions
     {
         private @_Controls m_Wrapper;
@@ -1545,6 +1577,7 @@ public class @_Controls : IInputActionCollection, IDisposable
         public InputAction @SlowMotion => m_Wrapper.m_PlayerControls_SlowMotion;
         public InputAction @TogglePause => m_Wrapper.m_PlayerControls_TogglePause;
         public InputAction @SwitchGun => m_Wrapper.m_PlayerControls_SwitchGun;
+        public InputAction @Health => m_Wrapper.m_PlayerControls_Health;
         public InputActionMap Get() { return m_Wrapper.m_PlayerControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1578,6 +1611,9 @@ public class @_Controls : IInputActionCollection, IDisposable
                 @SwitchGun.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnSwitchGun;
                 @SwitchGun.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnSwitchGun;
                 @SwitchGun.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnSwitchGun;
+                @Health.started -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHealth;
+                @Health.performed -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHealth;
+                @Health.canceled -= m_Wrapper.m_PlayerControlsActionsCallbackInterface.OnHealth;
             }
             m_Wrapper.m_PlayerControlsActionsCallbackInterface = instance;
             if (instance != null)
@@ -1606,6 +1642,9 @@ public class @_Controls : IInputActionCollection, IDisposable
                 @SwitchGun.started += instance.OnSwitchGun;
                 @SwitchGun.performed += instance.OnSwitchGun;
                 @SwitchGun.canceled += instance.OnSwitchGun;
+                @Health.started += instance.OnHealth;
+                @Health.performed += instance.OnHealth;
+                @Health.canceled += instance.OnHealth;
             }
         }
     }
@@ -1881,6 +1920,7 @@ public class @_Controls : IInputActionCollection, IDisposable
         void OnSlowMotion(InputAction.CallbackContext context);
         void OnTogglePause(InputAction.CallbackContext context);
         void OnSwitchGun(InputAction.CallbackContext context);
+        void OnHealth(InputAction.CallbackContext context);
     }
     public interface IMenuControlsActions
     {

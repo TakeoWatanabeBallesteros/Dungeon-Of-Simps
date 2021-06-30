@@ -7,12 +7,1539 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001BBAB9AB338 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000019BB6244D98 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BE3320FA8 : node = 0000019BBF5B6970
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320FA8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE33223E8 : node = 0000019BBF5B6AB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6A80
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3322AA8 : node = 0000019BBF5B6BF0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331F2F8 : node = 0000019BBF5B6D30
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3320588 : node = 0000019BBF5B6E70
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3323168 : node = 0000019BBF5B6FB0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331F808 : node = 0000019BBF5B70F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331CF88 : node = 0000019BBF5B7230
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320FA8
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE33223E8
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331F9B8 : node = 0000019BBF5B74B0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6BC0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331FD18 : node = 0000019BBF5B7370
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 7
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE33254D8 : node = 0000019BBF512BA0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3325EF8 : node = 0000019BBF5126A0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 9
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE33223E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3322AA8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6D00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3322AA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6E40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F2F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320588
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6F80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3323168
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B70C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3323168
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F808
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B7200
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F808
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331CF88
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B7340
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331CF88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F9B8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B75C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F9B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331FD18
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B7480
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Poison 1', format=5, channels=2, frequency=48000, lengthbytes=569280, lengthpcm=1533312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707520.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331FD18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE33254D8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF512CB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lava_flow_2', format=5, channels=2, frequency=48000, lengthbytes=946976, lengthpcm=3592192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.539873.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE33254D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325EF8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5127B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP', format=5, channels=2, frequency=48000, lengthbytes=1040448, lengthpcm=4073824, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125913.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325EF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3322FB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3322FB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320078
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320078
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324248
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324AB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324AB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324098
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324098
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324E18
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324E18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325178
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325178
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] SoundI::release                          : Purple Planet Music - Dark Shadows (1_32) 45bpm (0000019BE331B998)
+[LOG] SoundI::release                          :     Purple Planet Music - Dark Shadows (1_32) 45bpm (0000019B3ED6EA28)
+[LOG] SoundI::release                          :     Purple Planet Music - Dark Shadows (1_32) 45bpm (0000019BE3318398)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324248
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324AB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324AB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324098
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324098
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BBE46F098 : node = 0000019BBF513460
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46F098
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE46B3D8 : node = 0000019BBF5127E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF513570
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE46BFA8 : node = 0000019BBF512920
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE475AE8 : node = 0000019BBF512CE0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE477948 : node = 0000019BBF512E20
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE472BA8 : node = 0000019BBF513320
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE472F08 : node = 0000019BBF512F60
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46F098
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46B3D8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5128F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE474BB8 : node = 0000019BBF5130A0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE472338 : node = 0000019BBF512A60
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE471FD8 : node = 0000019BBF5131E0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE474D68 : node = 0000019BBF5B7730
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE4724E8 : node = 0000019BE27C6800
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 9
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46B3D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF512A30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE475AE8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF512DF0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE475AE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE477948
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF512F30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE477948
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472BA8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF513430
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472BA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472F08
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF513070
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472F08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE474BB8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5131B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE474BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF512B70
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE471FD8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5132F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE471FD8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE474D68
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B7840
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP', format=5, channels=2, frequency=48000, lengthbytes=1040448, lengthpcm=4073824, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125913.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE474D68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4724E8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Komiku_-_52_-_Cave_of_time', format=5, channels=2, frequency=48000, lengthbytes=1918272, lengthpcm=7962122, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.479706.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4724E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46C158
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46C158
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE473FE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE473FE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE479448
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE479448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47AA38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47AA38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47A378
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47A378
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE5D38
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE5D38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6ADFD08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6ADFD08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE3158
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE3158
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE03C8
+[LOG] SoundI::release                          :     Lava_flow_2 (0000019BE33254D8)
+[LOG] SoundI::release                          :         Lava_flow_2 (0000019B4AFA1458)
+[LOG] SoundI::release                          :         Lava_flow_2 (0000019BE3323EE8)
+[LOG] SoundI::release                          :     Poison 1 (0000019BE331FD18)
+[LOG] SoundI::release                          :         Poison 1 (0000019B4AF9FD98)
+[LOG] SoundI::release                          :         Poison 1 (0000019BE33260A8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE331F9B8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AF9E6D8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3325328)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE331CF88)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AFA1C78)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3325178)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE331F808)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AF9D838)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3324E18)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3323168)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AFA2498)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3325B98)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3320588)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AF9FBF8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3324098)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE331F2F8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AFA05B8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3324AB8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3322AA8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AF9E058)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3324248)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE33223E8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AFA2B18)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3320078)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3320FA8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019B4AFA3198)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3322FB8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE03C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47A378
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47A378
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BE3325EF8)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019B4AFA08F8)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BE3325838)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46C158
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46C158
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BB6ADFEB8 : node = 0000019BE27C7340
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6ADFEB8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C7450
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Purple Planet Music - Outcast (1_54) 70bpm', format=5, channels=2, frequency=48000, lengthbytes=1672960, lengthpcm=5491983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6ADFEB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6ADFD08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6ADFD08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE473FE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE473FE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47A378
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47A378
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE03C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE03C8
+[LOG] SoundI::release                          : Komiku_-_52_-_Cave_of_time (0000019BBE4724E8)
+[LOG] SoundI::release                          :     Komiku_-_52_-_Cave_of_time (0000019BAC0E6238)
+[LOG] SoundI::release                          :     Komiku_-_52_-_Cave_of_time (0000019BB6AE5168)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE471FD8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E92F8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE03C8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE472338)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E78F8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE3158)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE474BB8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA0F78)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6ADFD08)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE472F08)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA0C38)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE5D38)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE472BA8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA0A98)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE47ABE8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE477948)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4858)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE47A378)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE475AE8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4ED8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE47AA38)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE46BFA8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA46B8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE479448)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE46B3D8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4D38)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE473FE8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE46F098)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4378)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46C158)
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BB6AE1EC8 : node = 0000019BE27C6F80
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE1EC8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C7090
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AE0578 : node = 0000019BE27C7480
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AE08D8 : node = 0000019BE27C70C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AE1148 : node = 0000019BE27C7200
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AE2738 : node = 0000019BE27C6940
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AE34B8 : node = 0000019BE27C6A80
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AD92B8 : node = 0000019BE27C75C0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BB6AD9B28 : node = 0000019BE27C6BC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE1EC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE0578
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C7590
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3322AA8 : node = 0000019BE27C6800
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331E3C8 : node = 0000019BE27C6D00
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE331E578 : node = 0000019BE27C6E40
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE33239D8 : node = 0000019BBF5B6D30
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 9
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE0578
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE08D8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C71D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE08D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE1148
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C7310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE1148
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE2738
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6A50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE2738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE34B8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6B90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE34B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AD92B8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C76D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AD92B8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AD9B28
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6CD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AD9B28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3322AA8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6910
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3322AA8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331E3C8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6E10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Poison 1', format=5, channels=2, frequency=48000, lengthbytes=569280, lengthpcm=1533312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707520.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331E3C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331E578
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BE27C6F50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lava_flow_2', format=5, channels=2, frequency=48000, lengthbytes=946976, lengthpcm=3592192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.539873.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331E578
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE33239D8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019BBF5B6E40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP', format=5, channels=2, frequency=48000, lengthbytes=1040448, lengthpcm=4073824, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125913.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE33239D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320DF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320DF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331E8D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331E8D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3322E08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3322E08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3321ED8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3321ED8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F2F8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F2F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320588
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3320738
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3320738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F658
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F658
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BBE474D68)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BAC0E8458)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BB6AE6758)
+[LOG] SoundI::release                          : Purple Planet Music - Outcast (1_54) 70bpm (0000019BB6ADFEB8)
+[LOG] SoundI::release                          :     Purple Planet Music - Outcast (1_54) 70bpm (0000019BAC0E9498)
+[LOG] SoundI::release                          :     Purple Planet Music - Outcast (1_54) 70bpm (0000019BB6AE3ED8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331E8D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331E8D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3322E08
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3322E08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F658
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F658
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BB6AE23D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F658
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F658
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3321ED8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3321ED8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331E8D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331E8D8
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BE331FB68 : node = 0000019B4B608650
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331FB68
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608760
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3323828 : node = 0000019B4B609190
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3324C68 : node = 0000019B4B607ED0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3324FC8 : node = 0000019B4B608A10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3323B88 : node = 0000019B4B607C50
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331FB68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3323828
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6092A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE33260A8 : node = 0000019B4B608F10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3324098 : node = 0000019B4B6083D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3323EE8 : node = 0000019B4B609690
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3323828
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324C68
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B607FE0
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3317B28 : node = 0000019B4B608B50
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE33186F8 : node = 0000019B4B608DD0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BE3318C08 : node = 0000019B4B607D90
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE477438 : node = 0000019B4B609050
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324FC8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324FC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3323B88
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B607D60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3323B88
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE33260A8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B609020
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE33260A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3324098
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6084E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3324098
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3323EE8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6097A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3323EE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3317B28
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608C60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3317B28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE33186F8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608EE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE33186F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3318C08
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B607EA0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP', format=5, channels=2, frequency=48000, lengthbytes=1040448, lengthpcm=4073824, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125913.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3318C08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE477438
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B609160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Komiku_-_52_-_Cave_of_time', format=5, channels=2, frequency=48000, lengthbytes=1918272, lengthpcm=7962122, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.479706.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE477438
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331B998
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331B998
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE477948
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE477948
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE474BB8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE474BB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE475AE8
+[LOG] SoundI::release                          :     Lava_flow_2 (0000019BE331E578)
+[LOG] SoundI::release                          :         Lava_flow_2 (0000019BAC0E63D8)
+[LOG] SoundI::release                          :         Lava_flow_2 (0000019BE33223E8)
+[LOG] SoundI::release                          :     Poison 1 (0000019BE331E3C8)
+[LOG] SoundI::release                          :         Poison 1 (0000019BAC0E49D8)
+[LOG] SoundI::release                          :         Poison 1 (0000019BE331D7F8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3322AA8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E4838)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE331F658)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AD9B28)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E4698)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3320738)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AD92B8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E8E18)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3320588)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE34B8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E7DD8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE331F2F8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BB6AE2738)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE475AE8
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0EA4D8)
+[LOG] AsyncThread::threadFunc                  :     Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3321ED8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE1148)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E6238)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3322E08)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE08D8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E9FF8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE331E8D8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE0578)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E92F8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BE3320DF8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BB6AE1EC8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BAC0E78F8)
+[LOG] SoundI::release                          :         Bonfire_1 (0000019BB6AE23D8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE478518
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BE33239D8)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BAC0E6BF8)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BE3320FA8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325B98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3325328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE477948
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE477948
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BBE473E38 : node = 0000019B4B607890
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE473E38
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6079A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Purple Planet Music - Cobwebbed (1_33) 100bpm', format=5, channels=2, frequency=48000, lengthbytes=1214688, lengthpcm=4502674, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.363129.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE473E38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE475AE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE475AE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4775E8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4775E8
+[LOG] SoundI::release                          : Komiku_-_52_-_Cave_of_time (0000019BBE477438)
+[LOG] SoundI::release                          :     Komiku_-_52_-_Cave_of_time (0000019B4AFA0F78)
+[LOG] SoundI::release                          :     Komiku_-_52_-_Cave_of_time (0000019BBE47A378)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE33186F8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4378)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE472338)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3317B28)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4ED8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE475AE8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3323EE8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA46B8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE472188)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3324098)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4D38)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE474BB8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE33260A8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0EB378)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE4775E8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3323B88)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0EB1D8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE478518)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3324FC8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E9CB8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE477948)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3324C68)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E9B18)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE331B998)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE3323828)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E9498)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3325B98)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BE331FB68)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BAC0E8FB8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BE3325328)
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BBE474198 : node = 0000019B4B607ED0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE474198
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE472188 : node = 0000019B4B607C50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B607FE0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE478518 : node = 0000019B4B609050
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE4724E8 : node = 0000019B4B6083D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE474D68 : node = 0000019B4B608A10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE47AA38 : node = 0000019B4B608650
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE479B08 : node = 0000019B4B609690
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE474198
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472188
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B607D60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE479448 : node = 0000019B4B608B50
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 5
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE47ABE8 : node = 0000019B4B609190
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 6
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE4704D8 : node = 0000019B4B608DD0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE46D238 : node = 0000019B4B608F10
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000019BBE470D48 : node = 0000019B4B6092D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 0000019AD63FD188.  list count = 9
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472188
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE478518
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B609160
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE478518
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4724E8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6084E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4724E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE474D68
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608B20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE474D68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47AA38
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608760
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47AA38
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE479B08
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6097A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE479B08
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE479448
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608C60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE479448
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6092A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Bonfire_1', format=5, channels=2, frequency=48000, lengthbytes=2585728, lengthpcm=8912561, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE47ABE8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE4704D8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608EE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Poison 1', format=5, channels=2, frequency=48000, lengthbytes=569280, lengthpcm=1533312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707520.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE4704D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46D238
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B609020
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Lava_flow_2', format=5, channels=2, frequency=48000, lengthbytes=946976, lengthpcm=3592192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.539873.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46D238
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE470D48
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6093E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP', format=5, channels=2, frequency=48000, lengthbytes=1040448, lengthpcm=4073824, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125913.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE470D48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE472338
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE479E68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE479E68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE471AC8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE471AC8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46F098
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46F098
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46BDF8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46BDF8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46B078
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46B078
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46B3D8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46B3D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46BC48
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46BC48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BE3318C08)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019B4AFA4858)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BBE4750C8)
+[LOG] SoundI::release                          : Purple Planet Music - Cobwebbed (1_33) 100bpm (0000019BBE473E38)
+[LOG] SoundI::release                          :     Purple Planet Music - Cobwebbed (1_33) 100bpm (0000019B4AFA05B8)
+[LOG] SoundI::release                          :     Purple Planet Music - Cobwebbed (1_33) 100bpm (0000019BBE473FE8)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46F098
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46F098
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BBE46BFA8
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/Props.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BE3318398 : node = 0000019B4B607890
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE3318398
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/Props.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4421024
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 13696
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B6079A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Poison 1', format=5, channels=2, frequency=48000, lengthbytes=569280, lengthpcm=1533312, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707520.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE3318398
+[LOG] SoundI::release                          : Poison 1 (0000019BBE4704D8)
+[LOG] SoundI::release                          :     Poison 1 (0000019B4AFA00D8)
+[LOG] SoundI::release                          :     Poison 1 (0000019BBE46C158)
+[LOG] SystemI::createSound                     : filename = Dungeon Of Simps/Build\Desktop/SoundTrack.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000019BE331F2F8 : node = 0000019B4B608DD0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000019AD63FD188.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000019BE331F2F8
+[LOG] SystemI::createSoundInternal             :     Create name='Dungeon Of Simps/Build\Desktop/SoundTrack.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8360960
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 10048
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000019B4B608EE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Purple Planet Music - Outcast (1_54) 70bpm', format=5, channels=2, frequency=48000, lengthbytes=1672960, lengthpcm=5491983, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000019BE331F2F8
+[LOG] SoundI::release                          : Lava_flow_2 (0000019BBE46D238)
+[LOG] SoundI::release                          :     Lava_flow_2 (0000019B4AFA0C38)
+[LOG] SoundI::release                          :     Lava_flow_2 (0000019BBE46C308)
+[LOG] SoundI::release                          : Poison 1 (0000019BE3318398)
+[LOG] SoundI::release                          :     Poison 1 (0000019B4AFA05B8)
+[LOG] SoundI::release                          :     Poison 1 (0000019BE33186F8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE47ABE8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AF9E6D8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46BFA8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE479448)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA3198)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46BC48)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE479B08)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AF9FD98)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46B3D8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE47AA38)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AF9E058)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46B078)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE474D68)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA08F8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46BDF8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE4724E8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AF9D838)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE46F098)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE478518)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AF9FBF8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE471AC8)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE472188)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4ED8)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE479E68)
+[LOG] SoundI::release                          : Bonfire_1 (0000019BBE474198)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019B4AFA4D38)
+[LOG] SoundI::release                          :     Bonfire_1 (0000019BBE472338)
+[LOG] SoundI::release                          : ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BBE470D48)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019B4AFA0278)
+[LOG] SoundI::release                          :     ATMO EERIE Cave, Water Drips, Emptyness, Howling Interior Wind, Oppressive, LOOP (0000019BBE46C4B8)
+[LOG] SoundI::release                          : Purple Planet Music - Outcast (1_54) 70bpm (0000019BE331F2F8)
+[LOG] SoundI::release                          :     Purple Planet Music - Outcast (1_54) 70bpm (0000019B4AFA46B8)
+[LOG] SoundI::release                          :     Purple Planet Music - Outcast (1_54) 70bpm (0000019BE331E578)
+[LOG] SoundI::release                          :  (0000019BB67A63C8)
+[LOG] SoundI::release                          :     Fire Monster Vocals_6 (0000019B42A1F8B8)
+[LOG] SoundI::release                          :  (0000019BB67A8088)
+[LOG] SoundI::release                          :     BEAST 01 Threaten Short 06 (0000019BBE599C18)
+[LOG] SoundI::release                          :  (0000019BB67A6258)
+[LOG] SoundI::release                          :     Talking Mutant 1_Mono (0000019B42A21798)
+[LOG] SoundI::release                          :  (0000019BB67A60E8)
+[LOG] SoundI::release                          :     BEAST 01 Attack 08 (0000019BBE5998D8)
+[LOG] SoundI::release                          :  (0000019BB67A5118)
+[LOG] SoundI::release                          :     76962__michel88__deaths (0000019B42A21AD8)
+[LOG] SoundI::release                          :  (0000019BB67A42B8)
+[LOG] SoundI::release                          :     MR - Swamp Fish Creature Damage VO 08 (0000019BBE599F58)
+[LOG] SoundI::release                          :  (0000019BB67A4878)
+[LOG] SoundI::release                          :     Small_monsters_2 (0000019B42A1F238)
+[LOG] SoundI::release                          :  (0000019BB67A6AF8)
+[LOG] SoundI::release                          :     76966__michel88__paind (0000019BBE599A78)
+[LOG] SoundI::release                          :  (0000019BB67A4148)
+[LOG] SoundI::release                          :     MR - Orc Attack VO 04 (0000019BBE599DB8)
+[LOG] SoundI::release                          :  (0000019BB67AA478)
+[LOG] SoundI::release                          :     Dash_1 (0000019B42A21938)
+[LOG] SoundI::release                          :  (0000019BB67AA198)
+[LOG] SoundI::release                          :     Footstep on concrete 1 (0000019B42A22CB8)
+[LOG] SoundI::release                          :  (0000019BB67A77E8)
+[LOG] SoundI::release                          :     Footstep on concrete 2 (0000019B42A20758)
+[LOG] SoundI::release                          :  (0000019BB67AC868)
+[LOG] SoundI::release                          :     Footstep on concrete 3 (0000019B42A22498)
+[LOG] SoundI::release                          :  (0000019BB67A7958)
+[LOG] SoundI::release                          :     Footstep on concrete 4 (0000019B42A1F718)
+[LOG] SoundI::release                          :  (0000019BB67AE808)
+[LOG] SoundI::release                          :     mixkit-fighting-man-voice-2172 (0000019B42A22B18)
+[LOG] SoundI::release                          :  (0000019BB67AC588)
+[LOG] SoundI::release                          :     Impact Takeo 1 (0000019B42A20C38)
+[LOG] SoundI::release                          :  (0000019BB67AA758)
+[LOG] SoundI::release                          :     Impact Takeo 2 (0000019B42A20A98)
+[LOG] SoundI::release                          :  (0000019BB67A7DA8)
+[LOG] SoundI::release                          :     Impact Takeo 3 (0000019B42A200D8)
+[LOG] SoundI::release                          :  (0000019BB67AEC58)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (1) (0000019B42A222F8)
+[LOG] SoundI::release                          :  (0000019BB67A81F8)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (2) (0000019B42A1F3D8)
+[LOG] SoundI::release                          :  (0000019BB67A6538)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (3) (0000019B42A22978)
+[LOG] SoundI::release                          :  (0000019BB67AD9A8)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (4) (0000019B42A20418)
+[LOG] SoundI::release                          :  (0000019BB67AC2A8)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (6) (0000019B42A212B8)
+[LOG] SoundI::release                          :  (0000019BB67A7508)
+[LOG] SoundI::release                          :     234039__ameangelofsin__pain-ouch (mp3cut.net) (0000019B42A1F098)
+[LOG] SoundI::release                          :  (0000019BB67AAD18)
+[LOG] SoundI::release                          :     Female_pain_1 (0000019B42A21FB8)
+[LOG] SoundI::release                          :  (0000019BB67AABA8)
+[LOG] SoundI::release                          :     Female_pain_2 (0000019B42A227D8)
+[LOG] SoundI::release                          :  (0000019BB67AE248)
+[LOG] SoundI::release                          :     Female_pain_3 (0000019B42A21458)
+[LOG] SoundI::release                          :  (0000019BB67AA5E8)
+[LOG] SoundI::release                          :     Female_pain_4 (0000019B42A208F8)
+[LOG] SoundI::release                          :  (0000019BB67ADDF8)
+[LOG] SoundI::release                          :     223615__ctcollab__fireball-1_mp3cut.net (0000019B42A20DD8)
+[LOG] SoundI::release                          :  (0000019BB67AE3B8)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_1 (0000019B42A20F78)
+[LOG] SoundI::release                          :  (0000019BB67ACB48)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_2 (0000019B42A21118)
+[LOG] SoundI::release                          :  (0000019BB67A7228)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_3 (0000019B42A22158)
+[LOG] SoundI::release                          :  (0000019BB67AD838)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_4 (0000019B42A1FBF8)
+[LOG] SoundI::release                          :  (0000019BB67AD6C8)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_5 (0000019B42A22638)
+[LOG] SoundI::release                          :  (0000019BB67AE698)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_6 (1) (0000019B42A21C78)
+[LOG] SoundI::release                          :  (0000019BB67AB2D8)
+[LOG] SoundI::release                          :     MELEE_-_CK_-_ROPE_WHOOSH_Fast_Light_01_mp3cut.net_6 (0000019B42A215F8)
+[LOG] SoundI::release                          :  (0000019BB67AC138)
+[LOG] SoundI::release                          :     PowerUp_Mario_2 (0000019B42A20278)
+[LOG] SoundI::release                          :  (0000019BB67AC418)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (5) (0000019B42A22E58)
+[LOG] SoundI::release                          :  (0000019BB67AEAE8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (6) (0000019B42A1FA58)
+[LOG] SoundI::release                          :  (0000019BB67AB168)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (0000019B42A1F578)
+[LOG] SoundI::release                          :  (0000019BB67A9EB8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (3) (0000019B42A21E18)
+[LOG] SoundI::release                          :  (0000019BB67AA8C8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (2) (0000019B42A1FF38)
+[LOG] SoundI::release                          :  (0000019BB67AAFF8)
+[LOG] SoundI::release                          :     238641__madamvicious__anime-magical-girl-voice (1) (mp3cut.net) (1) (0000019B42A1FD98)
+[LOG] SoundI::release                          :  (0000019BB67AAA38)
+[LOG] SoundI::release                          :     wood_breaking_cracking_snapping_breaking_peeling_bones_break_snap_crack_13 (0000019B3ED6D848)
+[LOG] SoundI::release                          :  (0000019BB67AEDC8)
+[LOG] SoundI::release                          :     Bluezone_BC0254_wood_handling_003 (0000019B3ED6F8C8)
+[LOG] SoundI::release                          :  (0000019BB67ABB78)
+[LOG] SoundI::release                          :     Bluezone_BC0254_wood_falling_log_002_006 (0000019B3ED6BFE8)
+[LOG] SoundI::release                          :  (0000019BB67AB448)
+[LOG] SoundI::release                          :     Dungeon Door Open, Close, Locked (0000019B3ED6DB88)
+[LOG] SoundI::release                          :  (0000019BB67AB728)
+[LOG] SoundI::release                          :     Electronic_Knob_Multi_Turns_Slow-016 (0000019B3ED6C4C8)
+[LOG] SoundI::release                          :  (0000019BB67ADB18)
+[LOG] SoundI::release                          :     Openin_ Door_1 (0000019B3ED6BE48)
+[LOG] SoundI::release                          :  (0000019BB67AA028)
+[LOG] SoundI::release                          :     Bluezone_BC0268_switch_button_click_ignition_002_03 (0000019B3ED6F0A8)
+[LOG] SoundI::release                          :  (0000019BB67AB898)
+[LOG] SoundI::release                          :     impact_wood_debris_fall_hit_02 (0000019B3ED6EBC8)
+[LOG] SoundI::release                          :  (0000019BB67ABA08)
+[LOG] SoundI::release                          :     Sub Low Movement 01 (0000019B3ED6C188)
+[LOG] SoundI::release                          :  (0000019BB67ABCE8)
+[LOG] SoundI::release                          :     UI Button Click Sound Effect Button (0000019B3ED6C9A8)
+[LOG] SoundI::release                          :  (0000019BB67AC9D8)
+[LOG] SoundI::release                          :     Button_2 (0000019B3ED6E6E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
